@@ -283,30 +283,31 @@ header {
 }
 
 /*SECTION WHY*/
-.why_container{
+.why_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
 }
-.why_image{
+
+.why_image img {
     width: 400px;
     margin: auto;
     border-radius: 10px;
 }
 
-.why_content p{
+.why_content p {
     color: var(--text-light);
 }
 
-.why_grid{
+.why_grid {
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 80px auto;
     gap: 2rem;
 }
 
-.why_grid span{
+.why_grid span {
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -316,13 +317,89 @@ header {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, .1);
 }
 
-.why_grid h4{
+.why_grid h4 {
     margin-bottom: .5rem;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-dark);
 }
 
-.why_grid p{
+.why_grid p {
     color: var(--text-light);
+}
+
+/*SECTION DOCTORS*/
+.doctors_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.doctors_header_content p {
+    max-width: 600px;
+    color: var(--text-light);
+}
+
+.doctors_grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.doctors_card {
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.doctors_car_image {
+    position: relative;
+    overflow: hidden;
+}
+
+.doctors_socials {
+    position: relative;
+    left: 0;
+    bottom: -14rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transform: 0.5s;
+}
+
+.doctors_socials span {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    background-color: var(--withe);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.doctors_socials span:hover {
+    color: var(--primary-color);
+}
+
+.doctors_card:hover .doctors_socials {
+    bottom: 3rem;
+}
+
+.doctors_card h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.doctors_card p{
+    margin-top: 1rem;
+
 }
